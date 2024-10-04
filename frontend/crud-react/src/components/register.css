@@ -1,0 +1,140 @@
+/* Global Styles */
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Light background for the whole page */
+}
+
+/* Navbar styles */
+.navbar {
+    margin: 0; /* Remove any default margins */
+    padding: 10px 0; /* Adjust navbar padding if needed */
+}
+
+/* Signup container styles */
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto; /* Adjust this if needed */
+    padding: 20px; /* Padding around the container */
+    margin-top: -50px; /* Move the container up to reduce gap */
+}
+
+/* Signup card styles */
+.signup-card {
+    display: flex;
+    flex-direction: row; /* Horizontal layout */
+    background-color: #ffffff; /* White background for card */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px; /* Max width for larger screens */
+    overflow: hidden; /* Prevent overflow */
+}
+
+/* Left section styles */
+.signup-left {
+    flex: 1; /* Take up equal space */
+    padding: 30px; /* Padding for left section */
+}
+
+/* Title for the left section */
+.signup-left h1 {
+    margin: 0 0 20px;
+    font-size: 28px; /* Font size for title */
+    color: #ff6f91; /* Title color */
+}
+
+/* Form styles */
+.signup-form {
+    display: flex;
+    flex-direction: column; /* Stack inputs vertically */
+}
+
+/* Input field styles */
+.signup-input {
+    width: 100%; /* Full width for inputs */
+    padding: 10px;
+    margin-bottom: 15px; /* Space between inputs */
+    border: 1px solid #ff6f91; /* Border color for inputs */
+    border-radius: 5px; /* Rounded corners for inputs */
+    font-size: 16px; /* Font size for input text */
+}
+
+/* Checkbox container styles */
+.terms-container {
+    display: flex; /* Align items horizontally */
+    align-items: center; /* Center align items vertically */
+    margin-bottom: 15px; /* Space below the checkbox */
+}
+
+/* Checkbox style */
+.terms-container input[type="checkbox"] {
+    margin-right: 5px; /* Space between checkbox and label */
+}
+
+/* Button styles */
+.signup-button {
+    background-color: #ff6f91; /* Button background color */
+    color: #ffffff; /* Button text color */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Pointer cursor for button */
+    font-size: 16px; /* Font size for button text */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Button hover effect */
+.signup-button:hover {
+    background-color: #e76e9c; /* Darker shade on hover */
+}
+
+/* Signup text style */
+.signup-text {
+    text-align: center; /* Center align signup text */
+    margin-top: 15px; /* Space above signup text */
+}
+
+/* Right section styles */
+.signup-right {
+    flex: 1; /* Take up equal space */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 30px;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+/* Image in the right section */
+.signup-right img {
+    width: 100%; /* Full width of the container */
+    border-radius: 10px; /* Rounded corners for image */
+    max-width: 300px; /* Limit the width of the image */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .signup-card {
+        flex-direction: column; /* Stack sections vertically on smaller screens */
+    }
+    .signup-left,
+    .signup-right {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+    .signup-left h1 {
+        font-size: 24px; /* Reduce font size for smaller screens */
+    }
+    .signup-input {
+        font-size: 14px; /* Smaller font size for inputs */
+    }
+    .signup-button {
+        font-size: 14px; /* Smaller font size for button */
+    }
+    .signup-text {
+        font-size: 14px; /* Smaller font size for text */
+    }
+}
